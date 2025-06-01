@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogja Kita</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="intro" class="intro-overlay">
+    <video autoplay muted loop id="introVideo" class="intro-video">
+        <source src="img/pesonajogja.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="intro-content">
+        <small class="intro-subtitle">#ExploreYogyakarta</small>
+        <h1>Selamat Datang di Yogyakarta</h1>
+        <p>Temukan pesona budaya, sejarah, dan keindahan alam Yogyakarta</p>
+        <button id="exploreBtn"><i class="fa-solid fa-location-dot"></i> Explore Us</button>
+    </div>
+    </div>
+
+
+    <header>
+    <div class="logo">JogjaKita</div>
+    <button class="menu-toggle" aria-label="Toggle Menu">
+        <i class="fa fa-bars"></i>
+    </button>
+    <nav class="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#information" class="nav-link">Information</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#social" class="nav-link">Social</a>
+        <button id="guestbookBtn">GuestBook</button>
+    </nav>
+    </header>
+
+
+    <main>
+        <section id="home">
+            <button class="nav-arrow nav-left" id="navleft" aria-label="sebelum" disabled>&lt;</button>
+            <div class="slider" id="slider" tabindex="0" aria-live="polite" aria-atomic="true">
+                <section class="slide" aria-label="Kraton" tabindex="0">
+                    <img src="img/kr.jpg" alt="Kraton" class="main-img" loading="lazy">
+                    <section id="information">
+                        <h2>Kraton Ngayogyakarta</h2>
+                         <p>Keraton Ngayogyakarta Hadiningrat didirikan oleh Sri Sultan Hamengkubuwono I pada tahun 1756, menyusul Perjanjian Giyanti yang membagi Kesultanan Mataram. Terletak di jantung Kota Yogyakarta, keraton ini menjadi pusat pemerintahan, budaya, dan spiritualitas masyarakat Jawa. Tata letaknya mengikuti filosofi Jawa yang menghubungkan Gunung Merapi, Kraton, dan Laut Selatan sebagai poros sakral.</p>
+                         <br>
+                         <p>Selain menjadi kediaman resmi Sultan Yogyakarta, Keraton juga berfungsi sebagai museum yang menyimpan berbagai koleksi pusaka, artefak kerajaan, serta menjadi tempat penyelenggaraan upacara adat seperti Grebeg Maulud dan Sekaten. Keraton masih aktif hingga kini dan terbuka untuk kunjungan wisatawan sebagai bagian dari pelestarian budaya Jawa.</p>
+                    </section>
+
+                    <section id="ticket">
+                    <h2>Harga Tiket Masuk</h2>
+                        <ul>
+                            <li>Wisatawan Domestik: Rp 15.000</li>
+                            <li>Wisatawan Mancanegara: Rp 30.000</li>
+                            <li>Tambahan Guide: Rp 50.000</li>
+                        </ul>
+                    </section>
+
+                    <section id="gallery">
+                    <h2>Gallery</h2>
+                    <div class="gallery-grid">
+                        <img src="img/kr1.jpg" alt="Gallery Image 1" class="gallery-img">
+                        <img src="img/kr2.jpg" alt="Gallery Image 2" class="gallery-img">
+                        <img src="img/kr3.jpg" alt="Gallery Image 3" class="gallery-img">
+                        <img src="img/kr4.jpg" alt="Gallery Image 4" class="gallery-img">
+                        <img src="img/kr5.jpg" alt="Gallery Image 4" class="gallery-img">
+                    </div>
+                    </section>
+
+                    <section id="social">
+                        <h2>Follow Us</h2>
+                        <p>Stay connected with us on social media!</p>
+                        <ul class="social-links">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/kratonjogja?igsh=aW9nZTdtMjZyMTls"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://youtu.be/mOEl6hBq24c?si=esNxEMXioObrGm1P"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </section>
+                </section>
+                
+                <section class="slide" aria-label="sonobudoyo" tabindex="0">
+                    <img src="img/sb.jpg" alt="sonobudoyo" class="main-img" loading="lazy">
+                    <section id="information">
+                        <h2>Museum Sonobudaya</h2>
+                        <p>Museum Sonobudoyo didirikan pada 6 November 1935 sebagai pusat pelestarian budaya Jawa, Bali, dan Lombok. Awalnya dibentuk oleh Java Instituut—lembaga kebudayaan Hindia Belanda—museum ini menyimpan koleksi etnografi, arkeologi, seni, serta manuskrip kuno yang kaya akan nilai sejarah.</p>
+                        <br>
+                        <p>Terletak di kawasan pusat Kota Yogyakarta, museum ini dikenal sebagai salah satu museum terlengkap di Indonesia dalam bidang budaya Jawa. Gedung utamanya dirancang dengan gaya arsitektur tradisional Jawa yang menyerupai pendopo. Museum Sonobudoyo juga rutin menyelenggarakan pertunjukan wayang kulit dan kegiatan edukasi budaya untuk umum.</p>
+                    </section>
+
+                    <section id="ticket">
+                    <h2>Harga Tiket Masuk</h2>
+                        <ul>
+                            <li>Anak-anak: Rp 5.000</li>
+                            <li>Dewasa: Rp 10.000</li>
+                            <li>Wisatawan Mancanegara: Rp 20.000</li>
+                        </ul>
+                    </section>
+
+                    <section id="gallery">
+                    <h2>Gallery</h2>
+                    <div class="gallery-grid">
+                        <img src="img/sb1.jpg" alt="Gallery Image 1" class="gallery-img">
+                        <img src="img/sb4.jpg" alt="Gallery Image 2" class="gallery-img">
+                        <img src="img/sb3.jpg" alt="Gallery Image 3" class="gallery-img">
+                        <img src="img/sb5.jpg" alt="Gallery Image 4" class="gallery-img">
+                        <img src="img/sb6.jpg" alt="Gallery Image 4" class="gallery-img">
+                    </div>
+                    </section>
+
+                    <section id="social">
+                        <h2>Follow Us</h2>
+                        <p>Stay connected with us on social media!</p>
+                        <ul class="social-links">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/sonobudoyo/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://youtu.be/akoK4QWtl8k?si=N_72aMbAOJWGuA94"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section class="slide" aria-label="benteng" tabindex="0">
+                    <img src="img/bvv.jpg" alt="benteng" class="main-img" loading="lazy">
+                   <section id="information">
+                        <h2>Benteng Vredeburg</h2>
+                        <p>Benteng Vredeburg dibangun oleh Belanda pada tahun 1760 atas perintah Gubernur VOC, Nicolaas Harting, sebagai markas militer yang berfungsi mengawasi Keraton Yogyakarta. Awalnya berbentuk sederhana dari kayu dan tanah, kemudian diperkuat menjadi bangunan permanen pada tahun 1787 dengan nama Fort Vredeburg, yang berarti "Benteng Perdamaian."</p>
+                        <br>
+                        <p>Setelah kemerdekaan Indonesia, benteng ini sempat difungsikan oleh militer sebelum dialihfungsikan menjadi museum pada tahun 1980-an. Kini, Museum Benteng Vredeburg menjadi salah satu destinasi sejarah penting di Yogyakarta, menampilkan diorama perjuangan bangsa Indonesia serta koleksi peninggalan kolonial dan kemerdekaan.</p>
+                    </section>
+
+                    <section id="ticket">
+                    <h2>Harga Tiket Masuk</h2>
+                        <ul>
+                            <li>Weekday(Senin-Kamis) : Rp15.000</li>
+                            <li>Weekend(Jumat-Minggu)</li>
+                                <ol>
+                                    <li>08:00-15:30 : Rp 20.000</li>
+                                    <li>16:00-22:00 : Rp 25.000</li>
+                                </ol>
+                            <li>wisatawan Mancanegara: Rp 30.000</li>
+                        </ul>
+                    </section>
+
+                    <section id="gallery">
+                    <h2>Gallery</h2>
+                    <div class="gallery-grid">
+                        <img src="img/bv1.jpg" alt="Gallery Image 1" class="gallery-img">
+                        <img src="img/bv5.jpg" alt="Gallery Image 2" class="gallery-img">
+                        <img src="img/bv3.jpg" alt="Gallery Image 3" class="gallery-img">
+                        <img src="img/bv2.jpg" alt="Gallery Image 4" class="gallery-img">
+                        <img src="img/bv6.jpg" alt="Gallery Image 4" class="gallery-img">
+                    </div>
+                    </section>
+
+                    <section id="social">
+                        <h2>Follow Us</h2>
+                        <p>Stay connected with us on social media!</p>
+                        <ul class="social-links">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </section>
+                </section>
+            </div>
+            <button class="nav-arrow nav-right" id="navright" aria-label="sesudah">&gt;</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 JogjaKita. All rights reserved.</p>
+    </footer>
+
+    <div id="guestbookModal" class="modal">
+    <div class="modal-content">
+        <div class="guestbook-header">
+        <img src="https://www.gravatar.com/avatar?d=mp&s=90" alt="User Avatar" class="guest-avatar">
+        <div>
+            <h2><i class="fa-solid fa-book"></i> Buku Tamu</h2>
+            <p class="subtitle">Berikan kesan, pesan, atau saran Anda selama mengunjungi JogjaKita 🌟</p>
+        </div>
+        </div>
+
+        <form id="guestbookForm">
+        <label for="name">👤 Nama Lengkap:</label>
+        <input type="text" id="name" name="name" placeholder="Contoh: Diah Wulandari" required>
+
+        <label for="email">📧 Email:</label>
+        <input type="email" id="email" name="email" placeholder="Contoh: diah@email.com" required>
+
+        <label for="location">🌍 Lokasi/Kota:</label>
+        <input type="text" id="location" name="location" placeholder="Contoh: Sleman, Yogyakarta">
+
+        <label for="visitDate">📅 Tanggal Kunjungan:</label>
+        <input type="date" id="visitDate" name="visitDate">
+
+        <label for="message">💬 Pesan / Saran:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tuliskan pesan Anda..." required></textarea>
+
+        <div class="modal-buttons">
+            <button type="submit">Kirim</button>
+            <button type="button" id="closeGuestbook">Tutup</button>
+        </div>
+        </form>
+
+        <div class="guestbook-entries">
+        <h3><i class="fa-solid fa-comments"></i> Ulasan Sebelumnya</h3>
+        <div class="entry">
+            <strong>Rina Putri</strong> <small>• Jakarta • 2024-12-21</small>
+            <p>JogjaKita sangat informatif dan tampilannya memukau. Sukses terus!</p>
+        </div>
+        <div class="entry">
+            <strong>Fajar Nur</strong> <small>• Sleman • 2025-01-05</small>
+            <p>Sangat terbantu mencari info wisata sejarah. Terima kasih 🙏</p>
+        </div>
+        </div>
+    </div>
+    </div>  
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
